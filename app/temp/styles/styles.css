@@ -435,18 +435,17 @@ img {
   box-sizing: border-box;
 }
 
+h1, h2, h4, h5 {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
 p {
   font-family: Roboto;
   color:  #999999;
   font-size: 0.9375rem;
   font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  max-width: 955px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.9em;
-  margin-bottom: 2.9em;
 }
 
 .heading {
@@ -484,6 +483,10 @@ p {
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.wrapper--narrow {
+  max-width: 1200px;
 }
 
 .wrapper .wrapper {
@@ -544,6 +547,11 @@ p {
     float: left;
     width: 33.33%;
   }
+
+  .row__sm-6 {
+    float: left;
+    width: 50%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -590,6 +598,26 @@ p {
     float: left;
     width: 20%;
   }
+}
+
+/* Begin equal height rules */
+
+@media (min-width: 530px) {
+
+  .row--equal-height-above-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.row--equal-height-above-sm > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .img-container {
@@ -656,22 +684,35 @@ p {
 }
 
 .page-section {
-  margin-bottom: 70px;
+  margin-top: 57px;
+  margin-bottom: 69px;
 }
 
 @media (min-width: 800px) {
 
   .page-section {
+    margin-top: 97px;
     margin-bottom: 109px;
   }
 }
 
-.page-section--no-b-margin {
+.page-section--no-margin {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .page-section--facts {
   background-color: rgb(149, 225, 211);
+}
+
+.page-section__main-description {
+  line-height: 1.5;
+  max-width: 955px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.9em;
+  margin-bottom: 2.9em;
+  text-align: center;
 }
 
 .number-group {
@@ -724,4 +765,46 @@ p {
   font-size: 0.875rem;
   text-transform: uppercase;
   margin: 0;
+}
+
+.content-item {
+  margin-top: 31px;
+}
+
+.content-item__img-wrapper {
+  float: left;
+}
+
+.content-item__img-wrapper img {
+  width: 32px;
+  height: 32px;
+}
+
+.content-item__description {
+  margin-top: -3px;
+  margin-left: 60px;
+}
+
+.content-item__heading {
+  font-size: 0.875rem;
+  margin-top: 0;
+}
+
+.content-item__text {
+  line-height: 1.5;
+}
+
+.decor {
+  display: none;
+}
+
+@media (min-width: 800px) {
+
+  .decor {
+    background-color: #e5e5e5;
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+  }
 }

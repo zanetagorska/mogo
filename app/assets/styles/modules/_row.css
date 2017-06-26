@@ -1,5 +1,4 @@
 .row {
-
   @mixin clearfix;
 
   &--gutters {
@@ -37,6 +36,11 @@
     &__sm-4 {
       float: left;
       width: 33.33%;
+    }
+
+    &__sm-6 {
+      float: left;
+      width: 50%;
     }
   }
 
@@ -88,3 +92,20 @@
   }
 
 }
+
+/* Begin equal height rules */
+.row {
+
+  &--equal-height-above-sm {
+    @mixin atSmall {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+}
+

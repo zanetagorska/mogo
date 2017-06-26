@@ -1,0 +1,11 @@
+.decor {
+  display: none; 
+  
+  @mixin atMedium {
+    background-color:  #e5e5e5;
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+  }
+}
