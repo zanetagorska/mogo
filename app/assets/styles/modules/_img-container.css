@@ -1,19 +1,24 @@
 .img-container {
+
+}
+
+/*Images width gradient effect*/
+.img-container--gradient {
   width: 100%;
   background: $mainBlue;
   cursor: pointer;
 
-  &__item {
+  .img-container__item {
     position: relative;
     @mixin easeOut; 
     text-align: center;
   }
 
-  &__img {
+  .img-container__img {
     display: block;
   }
 
-  &__overlay {
+  .img-container__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,7 +30,7 @@
     transform-origin: 100% 100%;
   }
 
-  &__icon-group {
+  .img-container__icon-group {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -34,7 +39,7 @@
     @mixin easeOut;
   }
 
-  &__icon-text {
+  .img-container__icon-text {
     margin: 12px auto 0;
     color: #fff;
     text-transform: uppercase;
@@ -42,7 +47,7 @@
   }
 }
 
-.img-container:hover {
+.img-container--gradient:hover {
   .img-container__item {
     transform: translate(-10px, -10px);
   }

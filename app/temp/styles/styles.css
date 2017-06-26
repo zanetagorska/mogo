@@ -621,22 +621,28 @@ p {
 }
 
 .img-container {
+
+}
+
+/*Images width gradient effect*/
+
+.img-container--gradient {
   width: 100%;
   background: rgb(149, 225, 211);
   cursor: pointer;
 }
 
-.img-container__item {
+.img-container--gradient .img-container__item {
   position: relative;
   transition: all 0.3s ease-out;
   text-align: center;
 }
 
-.img-container__img {
+.img-container--gradient .img-container__img {
   display: block;
 }
 
-.img-container__overlay {
+.img-container--gradient .img-container__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -650,7 +656,7 @@ p {
           transform-origin: 100% 100%;
 }
 
-.img-container__icon-group {
+.img-container--gradient .img-container__icon-group {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -660,26 +666,26 @@ p {
   transition: all 0.3s ease-out;
 }
 
-.img-container__icon-text {
+.img-container--gradient .img-container__icon-text {
   margin: 12px auto 0;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.125rem;
 }
 
-.img-container:hover .img-container__item {
+.img-container--gradient:hover .img-container__item {
   -webkit-transform: translate(-10px, -10px);
           transform: translate(-10px, -10px);
 }
 
-.img-container:hover .img-container__overlay {
+.img-container--gradient:hover .img-container__overlay {
   background: linear-gradient(0deg, #fce38a 0%, #f38181 100%);
   opacity: 0.9;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.img-container:hover .img-container__icon-group {
+.img-container--gradient:hover .img-container__icon-group {
   opacity: 1;
 }
 
@@ -703,6 +709,48 @@ p {
 
 .page-section--facts {
   background-color: rgb(149, 225, 211);
+}
+
+.page-section--feature {
+  padding-top: 0;
+  background: #eee;
+  position: relative;
+}
+
+@media (min-width: 530px) {
+
+  .page-section--feature {
+    padding-top: 95px;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .page-section--feature {
+    background: url("../../assets/images/feature-bg-effect.jpg") top center no-repeat;
+    background-size: cover;
+  }
+}
+
+.page-section--feature .feature__ipad {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.page-section--feature .feature__iphone {
+  position: absolute;
+  bottom: -91px;
+  left: 56.5%;
+  width: 50%;
+}
+
+@media (min-width: 530px) {
+
+  .page-section--feature .feature__iphone {
+    width: auto;
+  }
 }
 
 .page-section__main-description {

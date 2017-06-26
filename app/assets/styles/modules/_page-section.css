@@ -16,6 +16,36 @@
     background-color: $mainBlue;
   }
 
+  &--feature {
+    padding-top: 0;
+    background: #eee;
+    position: relative;
+    @mixin atSmall {
+      padding-top: 95px;
+    }
+
+    @mixin atMedium {
+      background: url("../../assets/images/feature-bg-effect.jpg") top center no-repeat;
+      background-size: cover;
+    }
+
+    .feature__ipad {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .feature__iphone {
+      position: absolute;
+      bottom: -91px;
+      left: 56.5%;
+      width: 50%;
+      @mixin atSmall {
+        width: auto;
+      }
+    }
+  }
+
   &__main-description {
     line-height: 1.5;
     max-width: 955px;
