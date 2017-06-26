@@ -1,0 +1,42 @@
+.number-group {
+  text-align: center;
+
+  &--border {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+
+    @mixin atSmall {
+      border-bottom: 0;
+      border-right: 3px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--padding-lg {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    @mixin atSmall {
+      padding-top: 79px;
+      padding-bottom: 79px;
+    }
+  }
+
+  &__number {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+
+    @mixin atMedium {
+      font-size: 4.5rem;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}

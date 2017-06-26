@@ -1,0 +1,15 @@
+.page-section {
+  margin-bottom: 70px; 
+
+  @mixin atMedium {
+    margin-bottom: 109px;
+  }
+  
+  &--no-b-margin {
+    margin-bottom: 0;
+  }
+
+  &--facts {
+    background-color: $mainBlue;
+  }
+}

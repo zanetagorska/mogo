@@ -1,6 +1,6 @@
 .img-container {
   width: 100%;
-  background: #95e1d3;
+  background: $mainBlue;
   cursor: pointer;
 
   &__item {

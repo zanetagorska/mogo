@@ -75,3 +75,16 @@
     }
   }
 }
+
+
+/* Five columns layout */
+.row--5columns {
+
+  @mixin atSmall {
+    .row__sm-1 {
+      float: left;
+      width: 20%;
+    }
+  }
+
+}
