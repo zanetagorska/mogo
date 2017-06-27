@@ -657,8 +657,8 @@ p {
   height: 100%;
   opacity: 0;
   transition: all 0.3s ease-out;
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .img-container--gradient .img-container__icon-group {
@@ -702,9 +702,12 @@ p {
   font-size: 1.125rem;
 }
 
-.img-container--gradient:hover .img-container__item {
-  -webkit-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+.img-container--gradient .img-container__icon-text--smaller {
+  font-size: 0.875rem;
+}
+
+.img-container--gradient .img-container__icon-paragraph {
+  color: #fff;
 }
 
 .img-container--gradient:hover .img-container__overlay {
@@ -716,6 +719,11 @@ p {
 
 .img-container--gradient:hover .img-container__icon-group {
   opacity: 1;
+}
+
+.img-container--hover-border:hover .img-container__item {
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
 }
 
 .page-section {

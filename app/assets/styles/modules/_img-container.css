@@ -32,7 +32,7 @@
     height: 100%;
     opacity: 0;
     @mixin easeOut;
-    transform-origin: 100% 100%;
+    transform-origin: 50% 50%;
   }
 
   .img-container__icon-group {
@@ -73,13 +73,17 @@
     text-transform: uppercase;
     font-size: 1.125rem;
   }
+
+  .img-container__icon-text--smaller {
+    font-size: 0.875rem;
+  }
+
+  .img-container__icon-paragraph {
+    color: #fff;
+  }
 }
 
 .img-container--gradient:hover {
-  .img-container__item {
-    transform: translate(-10px, -10px);
-  }
-
   .img-container__overlay {
     background: linear-gradient(0deg, #fce38a 0%, #f38181 100%);
     opacity: 0.9;
@@ -88,5 +92,11 @@
 
   .img-container__icon-group {
     opacity: 1;
+  }
+}
+
+.img-container--hover-border:hover {
+  .img-container__item {
+    transform: translate(-10px, -10px);
   }
 }
