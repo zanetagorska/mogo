@@ -1,0 +1,15 @@
+
+  .accordion__description::-webkit-scrollbar {
+    width: 5px;
+  }
+  .accordion__description::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  .accordion__description::-webkit-scrollbar-thumb {
+    background-color: $mainBlue;
+    border-radius: 4px;
+  }
+
+
+

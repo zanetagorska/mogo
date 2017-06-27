@@ -1,0 +1,42 @@
+.accordion {
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__head {
+    border: solid 1px #e5e5e5;
+    padding: 0 16px;
+  }
+
+  &__icon {
+    margin-right: 13px;
+    vertical-align: middle;
+  }
+
+  &__heading {
+    margin: 0.87em auto;
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  &__arrow {
+    float: right;
+    margin: 21px 0;
+  }
+
+  &__body {
+    padding: 16px;
+    border: solid 1px #e5e5e5;
+    border-top: 0;
+  }
+
+  &__description {
+    line-height: 1.7;
+    height: 182px;
+    overflow: auto;
+
+    p {
+      margin: 0 10px 0 0;
+    }
+  }
+}

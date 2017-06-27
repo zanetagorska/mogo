@@ -11,3 +11,5 @@
 @import "modules/_number-group";
 @import "modules/_content-item";
 @import "modules/_decor";
+@import "modules/_accordion";
+@import "modules/_scroll-bar";
