@@ -70,6 +70,16 @@
     }
   }
 
+  &--clients {
+    padding-top: 98px;
+    padding-bottom: 114px;
+    background: #eee;
+    @mixin atMedium {
+      background: url("../../assets/images/feature-bg-effect.jpg") top center no-repeat;
+      background-size: cover;
+    }
+  }
+
   &__main-description {
     line-height: 1.5;
     max-width: 955px;

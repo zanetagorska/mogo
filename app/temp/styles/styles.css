@@ -620,6 +620,24 @@ p {
   display: flex;
 }
 
+@media (min-width: 800px) {
+
+  .row--equal-height-above-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.row--equal-height-above-md > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .img-container {
 }
 
@@ -816,6 +834,20 @@ p {
   text-align: center;
 }
 
+.page-section--clients {
+  padding-top: 98px;
+  padding-bottom: 114px;
+  background: #eee;
+}
+
+@media (min-width: 800px) {
+
+  .page-section--clients {
+    background: url("../../assets/images/feature-bg-effect.jpg") top center no-repeat;
+    background-size: cover;
+  }
+}
+
 .page-section__main-description {
   line-height: 1.5;
   max-width: 955px;
@@ -884,6 +916,8 @@ p {
 
 .content-item__img-wrapper {
   float: left;
+  margin-right: 28px;
+  height: 100%;
 }
 
 .content-item__img-wrapper img {
@@ -893,7 +927,6 @@ p {
 
 .content-item__description {
   margin-top: -3px;
-  margin-left: 60px;
 }
 
 .content-item__heading {
@@ -901,8 +934,47 @@ p {
   margin-top: 0;
 }
 
+.content-item__subheading {
+  font-family: Roboto;
+  color:  #333333;
+  font-size: 0.9375rem;
+  text-transform: none;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0;
+  position: relative;
+}
+
+.content-item__subheading::after {
+  content: '';
+  display: block;
+  margin: 19px 0 19px 140px;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+}
+
 .content-item__text {
   line-height: 1.5;
+}
+
+.content-item--clients {
+    margin-top: 65px;
+  }
+
+.content-item--clients .content-item__heading {
+  margin-bottom: 9px;
+}
+
+.content-item--clients .content-item__img-circle {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 110px;
+}
+
+.content-item--clients .content-item__img-circle img {
+  width: 110px;
+  height: 110px;
 }
 
 .decor {
