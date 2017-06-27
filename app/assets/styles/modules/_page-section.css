@@ -9,7 +9,7 @@
   
   &--no-margin {
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 0; 
   }
 
   &--facts {
@@ -55,6 +55,18 @@
     @mixin atMedium {
       padding-top: 72px;
       padding-bottom: 72px;
+    }
+  }
+
+  &--our-team {
+    &__heading {
+      text-align: center;
+      font-size: 0.875rem;
+      margin-top: 1.625em;
+      margin-bottom: 0px;
+    }
+    &__text {
+      text-align: center;
     }
   }
 
