@@ -1,0 +1,57 @@
+.blog-item {
+  &__img {
+    position: relative;
+  }
+
+  &__description {
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 10px;
+  }
+
+  &__headline {
+    margin-top: 15px;
+  }
+
+  &__date {
+    position: absolute;
+    bottom: 16px;
+    left: -10px;
+    background: $mainBlue; 
+    color: #fff;
+    padding: 9px 15px;
+  }
+
+  &__day {
+    font-weight: 700;
+    font-family: Montserrat;
+    font-size: 1.875rem; 
+  }
+
+  &__month {
+    font-weight: 300;
+    font-family: Roboto;
+    font-style: italic;
+  }
+
+  &__post-headline {
+    font-size: 0.875rem;
+    margin-top: 14px;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+
+  &__icons-wrapper {
+    margin: 15px 0;
+    color: #999999;
+  }
+
+  &__icon-item {
+    margin-right: 17px;
+    
+    img {
+      vertical-align: middle;
+    }
+  }
+}
