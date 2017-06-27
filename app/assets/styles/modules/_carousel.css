@@ -1,0 +1,95 @@
+.carousel {
+  text-align: center;
+  @mixin atSmall {
+    text-align: left;
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+
+    @mixin atSmall {
+      float: left;
+      margin-right: 32px;
+      margin-right: 62px;
+    }
+  }
+
+  &__img--border {
+    padding: 42px;
+    border: solid 2px $mainBlue;
+    max-width: 152px;
+  }
+
+  &__img--round {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+
+    @mixin atMedium {
+      width: 210px;
+      height: 210px;
+    }
+  }
+
+  &__description {
+    clear: both;
+
+    @mixin atSmall {
+      clear: none;
+      float: left;
+      max-width: 255px;
+    }
+
+    @mixin atMedium {
+      max-width: 475px;
+    }
+
+    @mixin atLarge {
+      max-width: 685px;
+    }
+  }
+
+  &__text {
+    color:  #999999;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1rem;
+
+    @mixin atMedium {
+      font-size: 1.2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__text--no-t-margin {
+    margin-top: 0;
+  }
+
+  &__signature {
+    font-family: Kaushan Script;
+    color:  #333333;
+    width: 100%;
+    font-size: 1rem;
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__signature::before {
+    content: "";
+    background-color:  #f38181;
+    width: 60px;
+    height: 3px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}

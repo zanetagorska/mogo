@@ -757,6 +757,20 @@ p {
   }
 }
 
+.page-section--quote {
+  background-color:  #f8f8f8;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+@media (min-width: 800px) {
+
+  .page-section--quote {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
 .page-section__main-description {
   line-height: 1.5;
   max-width: 955px;
@@ -915,3 +929,127 @@ p {
     background-color: rgb(149, 225, 211);
     border-radius: 4px;
   }
+
+.carousel {
+  text-align: center;
+}
+
+@media (min-width: 530px) {
+
+  .carousel {
+    text-align: left;
+  }
+}
+
+.carousel__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 530px) {
+
+  .carousel__img {
+    float: left;
+    margin-right: 32px;
+    margin-right: 62px;
+  }
+}
+
+.carousel__img--border {
+  padding: 42px;
+  border: solid 2px rgb(149, 225, 211);
+  max-width: 152px;
+}
+
+.carousel__img--round {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+}
+
+@media (min-width: 800px) {
+
+  .carousel__img--round {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+.carousel__description {
+  clear: both;
+}
+
+@media (min-width: 530px) {
+
+  .carousel__description {
+    clear: none;
+    float: left;
+    max-width: 255px;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .carousel__description {
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .carousel__description {
+    max-width: 685px;
+  }
+}
+
+.carousel__text {
+  color:  #999999;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+
+  .carousel__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .carousel__text {
+    font-size: 1.5rem;
+  }
+}
+
+.carousel__text--no-t-margin {
+  margin-top: 0;
+}
+
+.carousel__signature {
+  font-family: Kaushan Script;
+  color:  #333333;
+  width: 100%;
+  font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+
+  .carousel__signature {
+    font-size: 1.5rem;
+  }
+}
+
+.carousel__signature::before {
+  content: "";
+  background-color:  #f38181;
+  width: 60px;
+  height: 3px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}

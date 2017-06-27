@@ -47,6 +47,17 @@
     }
   }
 
+  &--quote {
+    background-color:  #f8f8f8;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    
+    @mixin atMedium {
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+  }
+
   &__main-description {
     line-height: 1.5;
     max-width: 955px;
