@@ -448,6 +448,11 @@ p {
   font-weight: 400;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+
 .heading {
   font-family: Montserrat;
   color:  #333333;
@@ -542,8 +547,24 @@ p {
   }
 }
 
+.row__bottom-margin {
+  margin-bottom: 1rem;
+}
+
 .row__bottom-margin-until-small {
   margin-bottom: 1.5rem;
+}
+
+.row__bottom-margin-until-medium {
+  margin-bottom: 1.5rem;
+}
+
+.row__b-border-until-small {
+  border-bottom: solid 1px #ddd;
+}
+
+.row__b-border-until-medium {
+  border-bottom: solid 1px #ddd;
 }
 
 .row__xs-6 {
@@ -555,6 +576,10 @@ p {
 
   .row__bottom-margin-until-small {
     margin-bottom: 0;
+  }
+
+  .row__b-border-until-small {
+    border-bottom: 0;
   }
 
   .row__sm-4 {
@@ -570,14 +595,32 @@ p {
 
 @media (min-width: 800px) {
 
+  .row__bottom-margin-until-small {
+    margin-bottom: 0;
+  }
+
+  .row__b-border-until-medium {
+    border-bottom: 0;
+  }
+
   .row__md-2 {
     float: left;
     width: 16.66%;
   }
 
+  .row__md-3 {
+    float: left;
+    width: 25%;
+  }
+
   .row__md-4 {
     float: left;
     width: 33.33%;
+  }
+
+  .row__md-5 {
+    float: left;
+    width: 41.66%;
   }
 
   .row__md-6 {
@@ -1306,4 +1349,123 @@ p {
 
 .blog-item__icon-item img {
   vertical-align: middle;
+}
+
+.site-footer {
+  padding-top: 43px;
+
+}
+
+.site-footer__logo {
+  font-family: Montserrat;
+  color:  #cccccc;
+  font-size: 2.875rem;
+  font-weight: 700;
+}
+
+.site-footer__description {
+  margin-top: 30px;
+  line-height: 1.5;
+  margin-bottom: 44px;
+}
+
+.site-footer__followers-text {
+  font-family: Montserrat;
+  color:  #333333;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 0;
+  padding-bottom: 13px;
+}
+
+.site-footer__followers-number {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.site-footer__follow-us {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.site-footer__social-icon-wrapper {
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.site-footer__main-headline {
+  font-size: 0.875rem;
+  margin-bottom: 35px;
+}
+
+.site-footer__blog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.site-footer__blog-img-wrapper {
+  width: 120px;
+  margin-right: 19px;
+  width: 186px;
+}
+
+.site-footer__blog-headline {
+  font-family: Montserrat;
+  color:  #333333;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+
+.site-footer__blog-date {
+  color:  #999999;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.site-footer__instagram-gallery {
+  margin-bottom: 10px;
+  display: table;
+}
+
+.site-footer__instagram-img {
+  width: 33.33%;
+  float: left;
+  padding: 1px 2px;
+}
+
+.site-footer__view-more {
+  font-family: Roboto;
+  color:  #333333;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+}
+
+.site-footer__copy-rights {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: Montserrat;
+  color:  #333333;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+  border-top: solid 1px #ddd;
+}
+
+.site-footer__copy-rights a {
+  font-family: Montserrat;
+  color:  #f38181;
 }

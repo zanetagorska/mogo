@@ -28,8 +28,24 @@
     }
   }
 
+  &__bottom-margin {
+    margin-bottom: 1rem;
+  }
+
   &__bottom-margin-until-small {
     margin-bottom: 1.5rem;
+  }
+
+  &__bottom-margin-until-medium {
+    margin-bottom: 1.5rem;
+  }
+
+  &__b-border-until-small {
+    border-bottom: solid 1px #ddd;
+  }
+
+  &__b-border-until-medium {
+    border-bottom: solid 1px #ddd;
   }
 
   &__xs-6 {
@@ -40,6 +56,10 @@
   @mixin atSmall {
     &__bottom-margin-until-small {
       margin-bottom: 0;
+    }
+
+    &__b-border-until-small {
+      border-bottom: 0;
     }
 
     &__sm-4 {
@@ -54,14 +74,32 @@
   }
 
   @mixin atMedium {
+    &__bottom-margin-until-small {
+      margin-bottom: 0;
+    }
+
+    &__b-border-until-medium {
+      border-bottom: 0;
+    }
+
     &__md-2 {
       float: left;
       width: 16.66%;
     }
 
+    &__md-3 {
+      float: left;
+      width: 25%;
+    }
+
     &__md-4 {
       float: left;
       width: 33.33%;
+    }
+
+    &__md-5 {
+      float: left;
+      width: 41.66%;
     }
 
     &__md-6 {
