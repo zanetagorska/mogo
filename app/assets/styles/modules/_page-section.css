@@ -41,8 +41,11 @@
       position: absolute;
       bottom: -91px;
       left: 56.5%;
-      width: 50%;
-      @mixin atSmall {
+      width: 43%;
+      @mixin atMedium {
+        width: 35%;
+      }
+      @mixin atLarge {
         width: auto;
       }
     }
@@ -85,6 +88,13 @@
     background: #f8f8f8;
     padding-top: 57px;
     padding-bottom: 57px;
+  }
+
+  &--blog {
+    text-align: center;
+    @mixin atSmall {
+      text-align: left;
+    }
   }
 
   &--map {

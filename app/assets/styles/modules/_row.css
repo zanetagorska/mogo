@@ -28,15 +28,15 @@
     }
   }
 
-  &__bottom-margin {
+  &__b-margin {
     margin-bottom: 1rem;
   }
 
-  &__bottom-margin-until-small {
+  &__b-margin-until-small {
     margin-bottom: 1.5rem;
   }
 
-  &__bottom-margin-until-medium {
+  &__b-margin-until-medium {
     margin-bottom: 1.5rem;
   }
 
@@ -54,7 +54,7 @@
   }
 
   @mixin atSmall {
-    &__bottom-margin-until-small {
+    &__b-margin-until-small {
       margin-bottom: 0;
     }
 
@@ -74,7 +74,7 @@
   }
 
   @mixin atMedium {
-    &__bottom-margin-until-small {
+    &__b-margin-until-small {
       margin-bottom: 0;
     }
 
