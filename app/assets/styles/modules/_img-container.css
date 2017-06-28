@@ -3,6 +3,18 @@
 
 .img-container--margin-b-until-md {
   margin-bottom: 20px;
+
+  @mixin atMedium {
+    margin-bottom: 0;
+  }
+}
+
+.img-container--margin-b-until-lg {
+  margin-bottom: 20px;
+  
+  @mixin atLarge {
+    margin-bottom: 0;
+  }
 }
 
 /*Images width gradient effect*/

@@ -17,6 +17,10 @@
     }
   }
 
+  &--center {
+    text-align: center;
+  }
+
   &--margin-t-larger {
     margin-top: 50px;
     @mixin atMedium {
@@ -26,6 +30,11 @@
 
   &__bottom-margin-until-small {
     margin-bottom: 1.5rem;
+  }
+
+  &__xs-6 {
+    float: left;
+    width: 50%;
   }
 
   @mixin atSmall {
@@ -45,6 +54,11 @@
   }
 
   @mixin atMedium {
+    &__md-2 {
+      float: left;
+      width: 16.66%;
+    }
+
     &__md-4 {
       float: left;
       width: 33.33%;

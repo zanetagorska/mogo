@@ -1,15 +1,15 @@
 .page-section {
-  margin-top: 57px;
-  margin-bottom: 69px; 
+  padding-top: 57px;
+  padding-bottom: 69px; 
 
   @mixin atMedium {
-    margin-top: 97px;
-    margin-bottom: 109px;
+    padding-top: 97px;
+    padding-bottom: 109px;
   }
   
   &--no-margin {
-    margin-bottom: 0;
-    margin-top: 0; 
+    padding-bottom: 0;
+    padding-top: 0; 
   }
 
   &--facts {
@@ -18,6 +18,7 @@
 
   &--feature {
     padding-top: 0;
+    padding-bottom: 0;
     margin-bottom: 0;
     background: #eee;
     position: relative;
@@ -62,8 +63,8 @@
     &__heading {
       text-align: center;
       font-size: 0.875rem;
-      margin-top: 1.625em;
-      margin-bottom: 0px;
+      padding-top: 1.625em;
+      padding-bottom: 0px;
     }
     &__text {
       text-align: center;
@@ -78,6 +79,46 @@
       background: url("../../assets/images/feature-bg-effect.jpg") top center no-repeat;
       background-size: cover;
     }
+  }
+
+  &--logos {
+    background: #f8f8f8;
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  &--map {
+    background: #eeeeee;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    @mixin atMedium {
+      background: url("../../assets/images/map.jpg") top center no-repeat;
+      background-size: cover;
+    }
+
+    &__text {
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #f38181;
+      position: relative;
+      margin-top: 10px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color:  #f38181;
+        width: 60px;
+        height: 3px;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
   }
 
   &__main-description {
