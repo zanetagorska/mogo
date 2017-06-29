@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-alert("ABC 321");
+throw new Error("Module build failed: (SystemJS) ENOENT: no such file or directory, open 'C:\\Users\\Żaneta\\Documents\\GitHub\\mogo\\C:\\Users\\Żaneta\\Documents\\GitHub\\mogo\\node_modules\\babel-loader\\lib\\index.js'\n\tError: ENOENT: no such file or directory, open 'C:\\Users\\Żaneta\\Documents\\GitHub\\mogo\\C:\\Users\\Żaneta\\Documents\\GitHub\\mogo\\node_modules\\babel-loader\\lib\\index.js'\n\t    at Error (native)\n\tError loading C:/Users/Żaneta/Documents/GitHub/mogo/C:\\Users\\Żaneta\\Documents\\GitHub\\mogo\\node_modules\\babel-loader\\lib\\index.js");
 
 /***/ })
 /******/ ]);

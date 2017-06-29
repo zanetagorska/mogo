@@ -1,1 +1,1 @@
-alert("ABC 321");
+alert("ABCD");
