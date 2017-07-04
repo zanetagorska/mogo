@@ -1,0 +1,52 @@
+.primary-nav {
+  line-height: 4.3;
+
+  &--pull-right {
+    clear: both;
+
+    @mixin atMedium {
+      float: right;
+      clear: none;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+    border-top: 1px solid #fff;
+
+    @mixin atMedium {
+      border-top: 0;
+    }
+  }
+
+  li {
+    list-style: none;
+    display: block;
+    @mixin atMedium {
+      float: left;
+      padding-right: 56px;
+    }
+  }
+
+  a {
+    color: #fff;
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    padding: 12px 0;
+    @mixin easeOut;
+  }
+
+  a:hover {
+    color: #eee;
+  }
+
+  a.is-current-link {
+    color:  #fce38a;
+    border-bottom: 3px solid #fce38a;
+  }
+
+}
